@@ -17,7 +17,6 @@ export class App extends Component {
       [event.target.name]: prevState[event.target.name] + 1,
     }));
   };
-
   countTotalFeedback = () => {
     return Object.values(this.state).reduce((acc, num) => acc + num, 0);
   };
